@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import bg from "./images/image.png"
 //import { ThemeProvider } from "next-themes";
 import { ThemeProvider } from "../components/ui/theme-provider"
+import Background from "./background_image";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,14 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`} style={{
-          backgroundImage: `url(${bg.src})`,
-          width: '100%',
-          height: '100%',
-        }}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`} 
        
       >
-        
+       <Background></Background> 
         <ThemeProvider
             attribute="class"
             defaultTheme="light"
