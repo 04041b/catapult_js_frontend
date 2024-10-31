@@ -15,7 +15,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <Button onClick={launchreq} className='bg-red-600 hover:bg-yellow-400'>launch</Button>
+        <Button onClick={launchreq} className='bg-red-600 hover:bg-yellow-400 h-24 px-10 m-4'>launch</Button>
         <Label id="status"></Label>
       </main>
 
