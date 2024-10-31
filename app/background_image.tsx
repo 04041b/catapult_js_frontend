@@ -22,7 +22,7 @@ export default function Background() {
 
   return (
     <Image
-      alt="Mountains"
+      alt="background image"
       src={randomImage}
       quality={100}
       fill
